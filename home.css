@@ -1,0 +1,444 @@
+/* 大方向上的決定 */
+
+body{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+h2{
+    width: fit-content;
+    margin: auto;
+    padding-top: 5%; 
+    font-size: 36px;
+}
+.h2explain{
+    font-size: 16px;
+    max-width: fit-content;
+    margin: auto;
+}
+h3{
+    font-size: 20px;
+}
+footer{
+    width: fit-content;
+    margin: auto;
+}
+/* ------------------------------------ */
+/* 區塊式決定 */
+.s1{
+    height: 90vh;
+}
+.mainvisual{
+    width: fit-content;
+    padding-top: 10%;
+    margin: auto; 
+}
+h1{
+    padding-top: 5%;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    /* display: inline-block; */
+}
+h1::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* 将元素定位在文本正下方 */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 水平居中 */
+    width: 1px; /* 线的宽度 */
+    height: 50px; /* 线的高度 */
+    background-color: white; /* 线的颜色 */
+  }
+
+#myHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color:black;
+    transition: top 2s; /* 添加过渡效果以平滑固定和解除固定 */
+    z-index: 100;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+  }
+  #menu-switch{
+    display: none;
+}
+.rwdbtn{
+    display: none;
+}
+.main-header{
+    display: none;
+}
+.main-nav>ul>li:nth-child(6),
+.main-nav>ul>li:nth-child(7){
+    display: none;
+}
+
+.logo{
+    margin-left: 5%;
+}
+.main-nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin: 3%;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+a:hover{
+    color: rgb(214, 219, 219);
+    text-decoration: underline rgb(163, 65, 23) 3px; /* 調整2px為你想要的粗細 */
+}
+/* ------------- */
+.servicecard{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    width: 60%;
+    margin: auto;
+}
+.servicecard img{
+    width: 100%;
+}
+.textbox{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    padding-left: 20px;
+    border-left: white  solid 5px;
+}
+.picbox{
+    width: 20%;
+}
+
+/* ---------------- */
+.s3{
+    height: 100vh;
+}
+.carouselbox{
+    display: flex;
+    justify-content: space-around;
+    background-color: #282727;
+    margin-top: 10%;
+    height: 30%
+}
+  .carousel {
+    width:60%;
+    height: 200px;
+    margin: 0 auto;
+    border: 2px #000;
+  }
+  .content {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 100px;
+    text-align: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .card >p{
+    height: 1%;
+  }
+  .btnContainer {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px auto;
+   
+  }
+  .btn {
+    font-size: 30px;
+    background-color:gray;
+  }
+
+  /* -- */
+  .s4{
+    height: 100vh;
+  }
+  .teams{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .teams :nth-child(2){
+    margin-top: -2%; 
+    margin-bottom: 2%; 
+  }
+  .teams :nth-child(3){
+    margin-top: -4%; 
+    margin-bottom: 4%; 
+  }
+  .teamcard{
+    width: 30%; 
+    background-color: rgb(57, 52, 52);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+  }
+  .teamcard img{
+    border-radius: 50%;
+    width: 50%;
+    margin-left: 25%;
+  }
+.cardtext{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+/* --- */
+.s5{
+    height: 80vh;
+  }
+.contactbar{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+.infobar,.textbar{
+    width: 50%;
+}
+.infobar{
+    
+    background-color: white;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+.phonenum{
+    color: orange;
+    font-weight: 400;
+    font-size: 25px;
+}
+.textbar{
+    background-color: rgb(28, 27, 27);
+}
+.infobar >div{
+   margin-left: 50%;
+   margin-bottom: 4%;
+}
+h4{
+    font-size: 36px;
+}
+.h4explain{
+    font-size: 16px;
+}
+.infobar img{
+    width: 50px;
+}
+.form-group{
+    width: 50%;
+    margin:5%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.form-group >input,textarea{
+    background-color: transparent;
+}
+
+.form-group > button{
+    border-radius: 10px;
+    width: 50%;
+}
+.imput{
+    background-color: transparent;
+    border-bottom: #7a2c08;
+}
+
+@media screen and (max-width: 415px) {
+    
+    .main-header{
+        width: 100%;
+    }
+    .logo{
+        position: absolute;
+        margin: auto;
+    }
+    .icon{
+        z-index: -10;
+        display: none;
+    }
+    .hb{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        display: block;
+    }
+    .hb label{
+        width: 40px;
+        height: 40px;
+        background-color:  #2C2A2A;
+        display: block;
+        position: relative;
+    }
+    .main-nav>ul>li:nth-child(6),
+.main-nav>ul>li:nth-child(7){
+    display:block;
+}
+    .main-nav {
+        position: absolute;
+        z-index: 9;
+        width: 100%;
+        height: 100vh;
+        /* height: calc(100vh - 30px); */
+        background-color: rgb(24, 8, 6); 
+        top: 100%;
+        left: 0%;
+        translate: -100% 0%;
+        opacity: 0;
+        transition: opacity 1s, translate 0s 1s; 
+    }
+    .main-nav >ul{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin: 20px;
+    }
+    .main-nav li + li{ 
+        border-top: 1px solid #fff;
+    }
+    #menu-switch:checked + .main-header .main-nav{
+        translate: 0% 0%;
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    .hb span{
+        width: 80%;
+        height: 1px;
+        background-color: rgb(250, 234, 234);
+        position: absolute;
+        inset: 0;
+        margin: auto;
+    }
+    .hb span:nth-child(1){
+        translate: 0px -10px;
+        rotate: 0deg;
+        transition: translate 0.3s 0.3s,
+                    rotate 0.3s 0s;
+    }
+    .hb span:nth-child(2){
+        opacity: 1;
+        transition: opacity 0.3s 0.6s;
+    }
+    .hb span:nth-child(3){
+        translate: 0px 10px;
+        rotate: 0deg;
+        transition: translate 0.3s 0.3s,
+                    rotate 0.3s 0s;
+    }
+    #menu-switch:checked + .main-header .hb span:nth-child(1){
+        translate: 0px 0px;
+        rotate: 45deg;
+        transition: translate 0.3s 0.3s,
+                    rotate 0.3s 0.6s;
+    }
+    #menu-switch:checked + .main-header .hb span:nth-child(2){
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    #menu-switch:checked + .main-header .hb span:nth-child(3){
+        translate: 0px 0px;
+        /*rotate: -45deg;*/
+        rotate: 315deg;
+        transition: translate 0.3s 0.3s,
+                    rotate 0.3s 0.6s;
+    }
+
+
+
+
+
+
+    .s1{
+        height: 70vh
+    }
+    #myHeader{
+        display: none;
+    }
+    .servicecard{
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+    }
+    .two{
+        flex-direction:column-reverse;
+    }
+    .textbox{
+        width: 80%;
+    }
+    .picbox{
+        margin: auto;
+    }
+    .carousel{
+        flex-direction: column;
+    }
+    .s3{
+        height: 50vh;
+    }
+    .content {
+        width: 80%;
+    }
+    .btnContainer{
+        display: none;
+    }
+    .s4{
+        height: 100vh;
+        padding-bottom: 10%;
+    }
+    .teams{
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+    .teamcard{
+        width: 80%;
+        margin: auto;
+       
+    }
+
+
+    .contactbar{
+        flex-direction: column;
+    }
+    .infobar,.textbar{
+        width: 100%;
+    }
+    .infobar>div{
+        width: 70%;
+        margin: auto;
+    }
+    .form-group{
+        width: 70%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    
+}
